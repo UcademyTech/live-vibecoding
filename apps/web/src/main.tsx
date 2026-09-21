@@ -4,7 +4,6 @@ import { ConfigProvider } from 'antd';
 import esES from 'antd/locale/es_ES';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
 import { App } from './App';
 
 const queryClient = new QueryClient();
@@ -18,9 +17,7 @@ createRoot(rootElement).render(
   <StrictMode>
     <QueryClientProvider client={queryClient}>
       <ConfigProvider locale={esES}>
-        <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
-          <App />
-        </BrowserRouter>
+        <App />
       </ConfigProvider>
     </QueryClientProvider>
   </StrictMode>,

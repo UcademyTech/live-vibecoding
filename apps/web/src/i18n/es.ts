@@ -1,7 +1,5 @@
 export const es = {
   APP_NAME: 'Dudas en plataforma',
-  NAV_STUDENT: 'Alumno',
-  NAV_TEACHER: 'Profe',
   CURRENT_USER: 'Ver como',
   ROLE_STUDENT: 'Estudiante',
   ROLE_TEACHER: 'Profe',
